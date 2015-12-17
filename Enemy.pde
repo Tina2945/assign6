@@ -23,6 +23,10 @@ class Enemy{
 
 	boolean isCollideWithFighter()
 	{
+	if(isHit(fighter.x,fighter.y,fighter.fighterImg.width,fighter.fighterImg.height,x,y,enemyImg.width,enemyImg.height)==true){
+           return true;
+              }
+
 		return false;
 	}
 
